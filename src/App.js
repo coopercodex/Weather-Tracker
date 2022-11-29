@@ -15,6 +15,7 @@ function App() {
         .then((res) => res.json())
         .then(data => {
           setData(data)
+          console.log(data)
         })
       setLocation('')
     }
@@ -41,6 +42,7 @@ function App() {
           </div>
           <div className='description'>
             {data.weather ? <p> {data.weather[0].description}</p> : null}
+          {data.weather ? <img src={`http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`} alt={`${data.weather[0].description}`} /> : null}
           </div>
         </div>
         {data.main !== undefined &&

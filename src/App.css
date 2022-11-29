@@ -19,7 +19,7 @@ h1 {
   position: relative;
   background-color: rgba(0, 0, 0, 0.4);
   color: whitesmoke;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .App::before {
@@ -53,9 +53,9 @@ h1 {
 
 .App .description {
   position: relative;
-  right: -90%;
+  /* right: -90%; */
   /* transform-origin:; */
-  transform: rotate(269deg);
+  /* transform: rotate(269deg); */
 }
 
 .App .bottom {
@@ -66,11 +66,12 @@ h1 {
   margin: 1rem auto;
   padding: 1rem;
   border-radius: 11px;
-  background-color: rgba(187, 175, 175, 0.1);
+  background-color: rgba(167, 165, 165, 0.181);
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
 }
 .App .search {
   text-align: center;
-  padding: .7rem
+  padding: .8rem
 }
 ::placeholder {
   color: rgb(210, 206, 206)
